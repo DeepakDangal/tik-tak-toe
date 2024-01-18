@@ -1,0 +1,79 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: rgb(84, 86, 86);
+}
+
+#root {
+  text-align: center;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.square {
+  font-size: 2em;
+  width: 3em;
+  height: 3em;
+  margin: 0.1em;
+  padding: 0;
+  text-align: center;
+  background-color: aqua;
+  border: 1px solid #be1313;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  vertical-align: top;
+}
+
+.square:hover {
+  background-color: #f0f0f0;
+}
+
+.status {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+}
+
+.board-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.winner {
+  background-color: #7eff78; /* Light green for winning squares */
+}
+
+.draw {
+  color: #ff6347; /* Tomato color for draw message */
+}
+
+.h1{
+  font-family:'Arial';
+  font-weight:bold;
+  cursor: pointer;;
+}
+
+.image{
+  width: 50%;
+  border-radius: 25%;
+}
+.para{
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+/* Optional: Add some additional styling for a responsive layout */
+@media (max-width: 600px) {
+  .board-row {
+    display: flex;
+    flex-direction: column;
+  }
+}
